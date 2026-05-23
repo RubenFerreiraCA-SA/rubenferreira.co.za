@@ -4,6 +4,20 @@
   background: transparent;
 }
 
+.pillar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 48px;
+}
+
+.pillar-icon-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
 .three-pillars-header {
   display: flex;
   flex-direction: column;
@@ -41,7 +55,8 @@
 .pillar {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
+  text-align: center;
   gap: 1.5rem;
   padding: 2.5rem 2rem;
   background: rgba(255, 209, 0, 0.05);
@@ -54,11 +69,6 @@
     border-color: rgba(255, 209, 0, 0.25);
     transform: translateY(-4px);
   }
-}
-
-.pillar-icon {
-  font-size: 2.5rem;
-  line-height: 1;
 }
 
 .pillar h3 {
