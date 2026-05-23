@@ -1,23 +1,36 @@
 .main-container {
   position: relative;
   width: 100vw;
-  height: 100vh;
+  height: 100dvh;
   overflow: hidden;
+  background: #020202;
 }
 
 .hero-background {
   position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
+  inset: 0;
   z-index: 0;
+  width: 100vw;
+  height: 100dvh;
   background:
-    linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 150px),
-    linear-gradient(90deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.55)),
+    linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.12) 170px),
+    radial-gradient(circle at 12% 76%, rgba(255, 209, 0, 0.18), transparent 23%),
+    radial-gradient(circle at 78% 18%, rgba(255, 209, 0, 0.12), transparent 32%),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.58)),
     url("../../../public/hero-card-bg.png");
   background-size: cover;
   background-position: center;
+  transform: scale(1.02);
+}
+
+.hero-background::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.42) 62%, #020202 100%),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.025) 0 1px, transparent 1px 4px);
+  opacity: 0.72;
 }
 
 .content-wrapper {
@@ -27,4 +40,14 @@
   height: 100%;
   overflow-y: auto;
   overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+app-hero-card,
+app-three-pillars,
+app-featured-research,
+app-recent-writings,
+app-projects {
+  display: block;
+  min-height: calc(100vh - 60px);
 }
