@@ -5,7 +5,9 @@
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 2.5rem 2rem 0;
+    padding-top: 60px;
 	background: transparent;
+    height: 100vh;
 }
 
 .recent-writings-section:hover .section-nav-link,
@@ -62,6 +64,7 @@
 	display: flex;
 	flex-direction: column;
 	gap: 1.2rem;
+    height: 70vh;
 }
 .recent-writing-icon {
 	margin-bottom: 0.2rem;
