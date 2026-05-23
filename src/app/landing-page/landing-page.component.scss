@@ -23,8 +23,19 @@ body {
   line-height: 1.6;
 }
 
+.landing-wrapper {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
 .page {
-  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
   background:
     linear-gradient(90deg, rgba(0, 32, 77, 0.96), rgba(0, 63, 140, 0.86)),
     radial-gradient(circle at 70% 30%, rgba(255, 209, 0, 0.14), transparent 30%);
@@ -34,8 +45,9 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 28px 6vw;
+  padding: 16px 6vw;
   border-bottom: 1px solid var(--line);
+  flex-shrink: 0;
 }
 
 .brand {
@@ -90,11 +102,11 @@ nav a:hover {
 .hero {
   display: grid;
   grid-template-columns: 1.05fr 0.95fr;
-  min-height: 560px;
-  padding: 70px 6vw 40px;
-  gap: 40px;
+  padding: 24px 6vw 24px;
+  gap: 20px;
   align-items: center;
   border-bottom: 1px solid var(--line);
+  flex: 0 0 auto;
 }
 
 .eyebrow {
@@ -108,7 +120,7 @@ nav a:hover {
 
 .hero h2 {
   font-family: Georgia, serif;
-  font-size: clamp(3rem, 7vw, 6.4rem);
+  font-size: clamp(2rem, 5vw, 4.2rem);
   line-height: 0.96;
   max-width: 780px;
   font-weight: 500;
@@ -158,7 +170,7 @@ nav a:hover {
 }
 
 .portrait {
-  min-height: 480px;
+  min-height: 220px;
   border: 1px solid var(--line);
   background:
     linear-gradient(rgba(0, 63, 140, 0.1), rgba(0, 20, 45, 0.7)),
@@ -183,14 +195,15 @@ nav a:hover {
   grid-template-columns: repeat(4, 1fr);
   border-bottom: 1px solid var(--line);
   background: rgba(0, 30, 72, 0.75);
+  flex-shrink: 0;
 }
 
 .pillar {
-  padding: 34px 5vw 34px 6vw;
+  padding: 18px 3vw 18px 4vw;
   border-right: 1px solid var(--line);
   display: grid;
-  grid-template-columns: 58px 1fr;
-  gap: 22px;
+  grid-template-columns: 40px 1fr;
+  gap: 12px;
   align-items: start;
 }
 
@@ -199,7 +212,7 @@ nav a:hover {
 }
 
 .icon {
-  font-size: 2.4rem;
+  font-size: 1.6rem;
   color: var(--madeira-yellow);
 }
 
@@ -209,30 +222,35 @@ nav a:hover {
   color: var(--madeira-yellow);
   text-transform: uppercase;
   letter-spacing: 0.12em;
-  font-size: 1rem;
-  margin-bottom: 8px;
+  font-size: 0.8rem;
+  margin-bottom: 6px;
 }
 
 .pillar p,
 .card p,
 .card li {
   color: rgba(247, 245, 240, 0.84);
-  font-size: 0.95rem;
+  font-size: 0.8rem;
+  line-height: 1.4;
 }
 
 .content-grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 22px;
-  padding: 34px 6vw 26px;
+  gap: 14px;
+  padding: 18px 6vw 12px;
+  flex: 1 1 auto;
+  overflow: hidden;
 }
 
 .card {
   border: 1px solid var(--line);
   background: var(--panel);
-  padding: 30px;
-  min-height: 300px;
+  padding: 20px;
   box-shadow: 0 20px 40px var(--shadow);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 
 .card .red-rule {
@@ -281,9 +299,10 @@ footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 28px 6vw 42px;
+  padding: 14px 6vw 14px;
   border-top: 1px solid var(--line);
   color: rgba(247, 245, 240, 0.82);
+  flex-shrink: 0;
 }
 
 .quote-mark {
