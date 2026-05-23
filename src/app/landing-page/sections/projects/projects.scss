@@ -1,0 +1,102 @@
+
+.ventures-section {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 2.5rem 2rem 0;
+	background: transparent;
+}
+
+.ventures-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-bottom: 1.5rem;
+	gap: 1rem;
+}
+.ventures-title {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--madeira-yellow, #ffd100);
+}
+.ventures-viewall {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #ffd100;
+	text-decoration: none;
+	letter-spacing: 0.04em;
+	display: flex;
+	align-items: center;
+	gap: 0.3em;
+	transition: color 0.2s;
+}
+.ventures-viewall:hover {
+	color: #ffe066;
+}
+
+.ventures-list {
+	display: flex;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+.venture-card {
+	background: rgba(20, 22, 30, 0.85);
+	border-radius: 1.1rem;
+	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.10);
+	padding: 2rem 1.5rem 1.5rem 1.5rem;
+	min-width: 260px;
+	max-width: 320px;
+	flex: 1 1 260px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.venture-icon {
+	margin-bottom: 0.2rem;
+}
+.venture-headline {
+	font-family: "Montserrat", sans-serif;
+	font-size: 1.1rem;
+	font-weight: 700;
+	letter-spacing: 0.08em;
+	text-transform: uppercase;
+	color: #f8fafc;
+	margin: 0 0 0.3rem 0;
+}
+.venture-subtitle {
+	font-family: "Inter", sans-serif;
+	font-size: 1rem;
+	font-weight: 600;
+	color: #ffd100;
+	margin-bottom: 0.3rem;
+}
+.venture-summary {
+	font-size: 1rem;
+	color: #cbd5e1;
+	margin: 0 0 0.7rem 0;
+}
+
+@media (max-width: 1100px) {
+	.ventures-section {
+		padding: 2.5rem 1rem 0;
+	}
+	.ventures-list {
+		gap: 1.2rem;
+	}
+	.venture-card {
+		min-width: 220px;
+		max-width: 1fr;
+		padding: 1.2rem 1rem 1rem 1rem;
+	}
+}
+
+@media (max-width: 700px) {
+	.ventures-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+}
