@@ -1,13 +1,12 @@
 .three-pillars {
   position: relative;
   z-index: 2;
-  min-height: calc(100vh - 60px);
+  min-height: calc(100vh);
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0 clamp(1rem, 4vw, 4rem) 3rem;
   background: transparent;
-  padding-top: 60px;
 }
 
 .three-pillars:hover .section-nav-link,
@@ -36,7 +35,7 @@
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
   text-align: center;
 }
 
@@ -114,4 +113,12 @@
     grid-template-columns: 1fr;
     max-width: 620px;
   }
+}
+
+.next-button-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
+  z-index: 4;
 }

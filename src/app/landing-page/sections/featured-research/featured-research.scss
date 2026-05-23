@@ -6,6 +6,7 @@
 	background: transparent;
 	display: flex;
 	justify-content: center;
+	height: 100vh;
 }
 
 .featured-research-section:hover .section-nav-link,
@@ -25,7 +26,8 @@
 	background: rgba(20, 22, 30, 0.85);
 	border-radius: 1.2rem;
 	box-shadow: 0 2px 24px 0 rgba(0,0,0,0.12);
-	padding: 2.5rem 2rem;
+    padding: 0 2rem;
+    margin: 2rem 0;
 }
 
 .featured-research-image {
