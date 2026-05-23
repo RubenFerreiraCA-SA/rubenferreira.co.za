@@ -1,10 +1,30 @@
 .main-container {
-  display: flex;
-  min-height: 100vh;
-  min-width: 100vw;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-background {
+  position: fixed;
   top: 0;
   left: 0;
-  position: absolute;
-  flex-direction: column;
-  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 150px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.55)),
+    url("../../../public/hero-card-bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.content-wrapper {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
