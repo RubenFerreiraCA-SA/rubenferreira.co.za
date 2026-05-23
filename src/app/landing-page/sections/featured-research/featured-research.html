@@ -12,15 +12,47 @@
 			<p class="featured-research-description">
 				A framework for evaluating reasoning quality in multi-agent AI debate systems using structured argumentative assessment and human discretion simulation.
 			</p>
-			<ul class="featured-research-bullets">
-				<li>Multi-Agent Debate</li>
-				<li>AI Deliberation</li>
-				<li>Reasoning Evaluation</li>
-				<li>Human Discretion Simulation</li>
-			</ul>
+			<div class="featured-research-chips" aria-label="Featured research topics">
+				<button
+					type="button"
+					class="chip featured-research-chip"
+					[ngClass]="{ selected: selectedChip === 'debate' }"
+					[attr.aria-pressed]="selectedChip === 'debate'"
+					(click)="selectChip('debate')"
+				>
+					Multi-Agent Debate
+				</button>
+				<button
+					type="button"
+					class="chip featured-research-chip"
+					[ngClass]="{ selected: selectedChip === 'deliberation' }"
+					[attr.aria-pressed]="selectedChip === 'deliberation'"
+					(click)="selectChip('deliberation')"
+				>
+					AI Deliberation
+				</button>
+				<button
+					type="button"
+					class="chip featured-research-chip"
+					[ngClass]="{ selected: selectedChip === 'evaluation' }"
+					[attr.aria-pressed]="selectedChip === 'evaluation'"
+					(click)="selectChip('evaluation')"
+				>
+					Reasoning Evaluation
+				</button>
+				<button
+					type="button"
+					class="chip featured-research-chip"
+					[ngClass]="{ selected: selectedChip === 'discretion' }"
+					[attr.aria-pressed]="selectedChip === 'discretion'"
+					(click)="selectChip('discretion')"
+				>
+					Human Discretion Simulation
+				</button>
+			</div>
 			<div class="featured-research-actions">
-				<a class="btn primary" href="#" target="_blank">Read Paper</a>
-				<a class="btn secondary" href="#" target="_blank">View Abstract</a>
+				<a class="btn btn-primary" href="#" target="_blank">Read Paper</a>
+				<a class="btn btn-secondary" href="#" target="_blank">View Abstract</a>
 			</div>
 		</div>
 	</div>
