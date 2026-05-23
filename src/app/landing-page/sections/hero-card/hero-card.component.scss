@@ -1,0 +1,53 @@
+.hero-card {
+  position: relative;
+  height: 60%;
+  display: flex;
+  overflow: hidden;
+}
+
+.hero-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 150px),
+    linear-gradient(90deg, rgba(0, 0, 0, 0.82), rgba(0, 0, 0, 0.55)),
+    url("../../../../../public/hero-card-bg.png");
+
+  background-size: cover;
+  background-position: center;
+
+  z-index: 0;
+}
+
+.hero-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.impact-line {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  background: linear-gradient(
+    180deg,
+    #ffd979 0%,
+    #f5c85a 35%,
+    #d89d2b 70%,
+    #fff0b2 100%
+  );
+
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-shadow:
+    0 0 6px rgba(255, 208, 96, 0.25),
+    0 0 18px rgba(255, 196, 64, 0.12);
+
+  user-select: none;
+}
