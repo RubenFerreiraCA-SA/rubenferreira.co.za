@@ -23,15 +23,16 @@ body {
   line-height: 1.6;
 }
 
-
 /* app.component no longer contains landing markup — styles moved to LandingPage component */
-  .pillar {
-    padding: 28px 24px;
-  }
-  .actions {
-    flex-direction: column;
-  }
-  .work-item {
-    grid-template-columns: 1fr;
-  }
+.pillar {
+  padding: 28px 24px;
+}
+.actions {
+  flex-direction: column;
+}
+.work-item {
+  grid-template-columns: 1fr;
+}
+.work-item .image {
+  height: 200px;
 }

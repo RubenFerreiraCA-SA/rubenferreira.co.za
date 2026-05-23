@@ -5,6 +5,5 @@ import { Component, ViewEncapsulation } from '@angular/core';
   standalone: true,
   templateUrl: './landing-page.component.html',
   styleUrls: ['./landing-page.component.scss'],
-  encapsulation: ViewEncapsulation.None,
 })
 export class LandingPageComponent {}

@@ -1,1 +1,24 @@
-/* You can add global styles to this file, and also import other style files */
+:root {
+  --madeira-blue: #003f8c;
+  --madeira-blue-dark: #002b61;
+  --madeira-yellow: #ffd100;
+  --madeira-red: #d62828;
+  --ivory: #f7f5f0;
+  --soft-white: #ffffff;
+  --line: rgba(255, 209, 0, 0.34);
+  --panel: rgba(0, 25, 60, 0.55);
+  --shadow: rgba(0, 0, 0, 0.35);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Inter, Manrope, Arial, sans-serif;
+  background: var(--madeira-blue);
+  color: var(--ivory);
+  line-height: 1.6;
+}
