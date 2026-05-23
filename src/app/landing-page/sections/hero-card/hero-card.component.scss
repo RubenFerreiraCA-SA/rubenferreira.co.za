@@ -17,7 +17,12 @@
   background-position: 62% 50%;
   background-repeat: no-repeat;
 }
-
+.hero-card:hover .section-nav-link,
+.hero-card .section-nav-link:focus-visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(-50%) translateY(0);
+}
 .hero-card::before {
   content: "";
   position: absolute;

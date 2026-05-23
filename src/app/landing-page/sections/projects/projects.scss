@@ -1,10 +1,18 @@
 
 .ventures-section {
+	position: relative;
 	width: 100%;
 	max-width: 1200px;
 	margin: 0 auto;
 	padding: 2.5rem 2rem 0;
 	background: transparent;
+}
+
+.ventures-section:hover .section-nav-link,
+.ventures-section .section-nav-link:focus-visible {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateX(-50%) translateY(0);
 }
 
 .ventures-header {

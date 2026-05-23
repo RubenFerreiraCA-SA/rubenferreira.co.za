@@ -1,10 +1,18 @@
 
 .featured-research-section {
+	position: relative;
 	width: 100%;
 	padding: 2.5rem 0;
 	background: transparent;
 	display: flex;
 	justify-content: center;
+}
+
+.featured-research-section:hover .section-nav-link,
+.featured-research-section .section-nav-link:focus-visible {
+	opacity: 1;
+	pointer-events: auto;
+	transform: translateX(-50%) translateY(0);
 }
 
 .featured-research-content {
