@@ -56,6 +56,12 @@ header {
   align-items: center;
 }
 
+.brand-logo {
+  height: 54px;
+  width: auto;
+  object-fit: contain;
+}
+
 .monogram {
   font-family: Georgia, serif;
   font-size: 54px;
