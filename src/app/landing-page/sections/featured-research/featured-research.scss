@@ -1,0 +1,126 @@
+
+.featured-research-section {
+	width: 100%;
+	padding: 2.5rem 0;
+	background: transparent;
+	display: flex;
+	justify-content: center;
+}
+
+.featured-research-content {
+	display: flex;
+	flex-direction: row;
+	gap: 2.5rem;
+	max-width: 1200px;
+	width: 100%;
+	align-items: center;
+	background: rgba(20, 22, 30, 0.85);
+	border-radius: 1.2rem;
+	box-shadow: 0 2px 24px 0 rgba(0,0,0,0.12);
+	padding: 2.5rem 2rem;
+}
+
+.featured-research-image {
+	flex: 1 1 420px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.featured-research-image img {
+	max-width: 400px;
+	width: 100%;
+	border-radius: 0.8rem;
+	background: #181a20;
+	box-shadow: 0 2px 16px 0 rgba(0,0,0,0.18);
+}
+
+.featured-research-details {
+	flex: 2 1 500px;
+	display: flex;
+	flex-direction: column;
+	gap: 1.2rem;
+}
+.featured-research-label {
+	font-family: "Montserrat", sans-serif;
+	font-size: 0.85rem;
+	font-weight: 700;
+	letter-spacing: 0.18em;
+	text-transform: uppercase;
+	color: var(--madeira-yellow, #ffd100);
+	margin-bottom: 0.2rem;
+}
+.featured-research-title {
+	font-family: "Inter", sans-serif;
+	font-size: clamp(2rem, 3vw, 2.5rem);
+	font-weight: 600;
+	letter-spacing: -0.02em;
+	color: #f8fafc;
+	margin: 0;
+}
+.featured-research-description {
+	font-size: 1.1rem;
+	color: #cbd5e1;
+	margin: 0.5rem 0 0.8rem 0;
+}
+.featured-research-bullets {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem 2.5rem;
+	list-style: none;
+	padding: 0;
+	margin: 0 0 1.2rem 0;
+}
+.featured-research-bullets li {
+	font-size: 1rem;
+	color: #ffd100;
+	position: relative;
+	padding-left: 1.2em;
+}
+.featured-research-bullets li::before {
+	content: "•";
+	position: absolute;
+	left: 0;
+	color: #ffd100;
+}
+.featured-research-actions {
+	display: flex;
+	gap: 1.2rem;
+}
+.btn {
+	display: inline-block;
+	padding: 0.7em 1.6em;
+	border-radius: 0.4em;
+	font-size: 1rem;
+	font-weight: 600;
+	text-decoration: none;
+	transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+	box-shadow: 0 1px 6px 0 rgba(0,0,0,0.10);
+}
+.btn.primary {
+	background: #ffd100;
+	color: #181a20;
+}
+.btn.primary:hover {
+	background: #ffe066;
+}
+.btn.secondary {
+	background: transparent;
+	color: #ffd100;
+	border: 2px solid #ffd100;
+}
+.btn.secondary:hover {
+	background: #ffd100;
+	color: #181a20;
+}
+
+@media (max-width: 900px) {
+	.featured-research-content {
+		flex-direction: column;
+		align-items: stretch;
+		gap: 2rem;
+		padding: 2rem 1rem;
+	}
+	.featured-research-image img {
+		max-width: 100%;
+	}
+}
