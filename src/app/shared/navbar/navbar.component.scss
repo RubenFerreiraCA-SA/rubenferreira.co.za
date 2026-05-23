@@ -1,12 +1,14 @@
 .navbar-container {
+  position: fixed;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: #333;
+  background: linear-gradient(180deg, #000 0%, #000 70%, rgba(0, 0, 0, 0) 100%);
   color: #fff;
   z-index: 1000;
   top: 0;
   left: 0;
   width: 100%;
+  height: 60px;
 }
