@@ -2,8 +2,8 @@
   position: fixed;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem;
+  align-items: flex-start;
+  padding: 0.6rem 1rem;
   background: linear-gradient(180deg, #000 0%, #000 70%, rgba(0, 0, 0, 0) 100%);
   color: #fff;
   z-index: 1000;
@@ -11,4 +11,25 @@
   left: 0;
   width: 100%;
   height: 60px;
+}
+
+.logo img {
+  height: 64px;
+  margin-top: -18px;
+}
+
+.menu-items-container {
+  display: flex;
+  flex-direction: row;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.menu-item {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
 }
